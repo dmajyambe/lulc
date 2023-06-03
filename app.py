@@ -97,16 +97,7 @@ def get_fused_data():
 
 # Prepare the fused 
 gee_data = get_fused_data()
-import pandas as pd
 
-def get_pd(nested_list):
-    try:
-        # Your code here
-        data = pd.DataFrame(nested_list)
-        return data
-    except Exception as e:
-        print("Error occurred:", e)
-        return None
 
 
 def get_features(longitude, latitude):
@@ -125,11 +116,13 @@ def get_features(longitude, latitude):
 
     # Convert the loaded data to ee.List
     nested_list = dataclean.reduceColumns(ee.Reducer.toList(len(band_order)), band_order).values().get(0)
+    nested_list=nested_list.getInfo()
 
     # TODO: Convert the `nested_list` to a Pandas dataframe 
-    data = get_pd(nested_list)# I have called the get_pd function defined above
+    data =pd.DataFrame(nested_list,columns=band_order)
+    #print(data)
     return data
-
+#get_features(lon,lat)
 @app.route('/')
 def home():
     return render_template('index.html')
