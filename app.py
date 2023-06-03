@@ -105,7 +105,7 @@ def get_features(longitude, latitude):
     dataclean = gee_data.select(trainingbands).sampleRegions(collection=poi_geometry,properties=[label],scale=scaleFactor)
    
     # TODO: use getInfo to load the sample's features
-    sample = dataclean.aggregate_stats(label).getInfo()
+    sample = dataclean.getInfo()
 
 
     # Find the band ordering in the loaded data
