@@ -67,7 +67,7 @@ def get_fused_data():
     #  TODO: Load the COPERNICUS/S2 dataset and filter dates "2015-07-01","2015-12-31"
     se2 = ee.ImageCollection('COPERNICUS/S2').filterDate("2015-07-01","2015-12-31")
     # TODO: Use the filterBounds function to get filter the are specified in ROI
-    se2 = se2.filterBounds(roi)
+    #se2 = se2.filterBounds(roi)
 
     #  TODO: Keep pixels that have less than 20% cloud
     se2 = se2.filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE",20))
@@ -120,9 +120,9 @@ def get_features(longitude, latitude):
 
     # TODO: Convert the `nested_list` to a Pandas dataframe 
     data =pd.DataFrame(nested_list,columns=band_order)
-    #print(data)
+   
     return data
-#get_features(lon,lat)
+# get_features(lon,lat)
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -133,6 +133,7 @@ def predict():
     features = request.form.to_dict()
     longitude = float(features['longitude'])
     latitude = float(features['latitude'])
+
     # TODO: get the features for the given location
     final_features = get_features(longitude=longitude,latitude=latitude)
     
