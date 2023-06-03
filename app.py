@@ -132,7 +132,7 @@ def predict():
     final_features = get_features(longitude=longitude,latitude=latitude)
     
     # TODO: get predictions from the the model using the features loaded
-    prediction = predict()
+    prediction = model.predict(final_features)
 
     # convert the prediction to an integer
     output = int(prediction[0])
