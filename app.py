@@ -58,6 +58,7 @@ def get_fused_data():
     mean = 0.2062830612359614
     std = 1.1950717918110398
 
+
     #  TODO: Convert the mean and std to ee.Number    
     vmu = ee.Number(mean)
     vstd = ee.Number(std)
@@ -71,7 +72,8 @@ def get_fused_data():
     #  TODO: Keep pixels that have less than 20% cloud
     se2 = se2.filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE",20))
 
-    # TODO:Update the mask 
+    # TODO:Update the mask
+
     se2 = se2.map(se2mask)
 
 
@@ -95,6 +97,16 @@ def get_fused_data():
 
 # Prepare the fused 
 gee_data = get_fused_data()
+import pandas as pd
+
+def get_pd(nested_list):
+    try:
+        # Your code here
+        data = pd.DataFrame(nested_list)
+        return data
+    except Exception as e:
+        print("Error occurred:", e)
+        return None
 
 
 def get_features(longitude, latitude):
@@ -114,8 +126,8 @@ def get_features(longitude, latitude):
     # Convert the loaded data to ee.List
     nested_list = dataclean.reduceColumns(ee.Reducer.toList(len(band_order)), band_order).values().get(0)
 
-    # TODO: Convert the `nested_list` to a Pandas dataframe
-    data = pd.DataFrame(nested_list)
+    # TODO: Convert the `nested_list` to a Pandas dataframe 
+    data = get_pd(nested_list)# I have called the get_pd function defined above
     return data
 
 @app.route('/')
