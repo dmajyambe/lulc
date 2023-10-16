@@ -1,11 +1,5 @@
-# from flask import Flask
-# app = Flask(__name__)
-# @app.route('/')
-# def home():
-#  return 'Hello, Flask!'
 
 import ee
-
 import numpy as np
 import pandas as pd
 from flask import Flask, request, render_template
@@ -20,8 +14,8 @@ with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Initialize GEE
-service_account = 'dmajyamb@alien-striker-384513.iam.gserviceaccount.com'
-credentials = ee.ServiceAccountCredentials(service_account, 'private-key.json')
+service_account = 'mutabazi@plasma-light-384513.iam.gserviceaccount.com'
+credentials = ee.ServiceAccountCredentials(service_account, 'private-key.json.json')
 ee.Initialize(credentials)
 
 # Initialize variables required for GEE dataset preprocessing (similar to the examples in Exercise 6_1)

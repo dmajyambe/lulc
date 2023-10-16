@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "plasma-light-384513",
+  "private_key_id": "3e20b44b678ea45baee45a6e74b0ef31da2cf9f0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDEvvcnwgn2pWbe\nBpBBhTRVPqmOJAY0kOYV93+0jnMrbTPEgfzeiiP+R++9BWIjFLMNU9g7Dq7YKCZ+\n35WCGXDegeElrwzUjg8QWaSIMSBQYbChHsRr6a6xAPfMty2npPuiRqO2nnehU56v\neU6csStNFLMsnrw1rCYd153pBezNUocPLgd/ud2F6Wk0qa4jSC9fjaGSaBrRmNlP\nC03nGFPUNOIrSCGzi08Oi3kBPzEq4vuGGJhTlqQRHweXtEsE9ba66gBdth9QJtjK\n8thPcVWyXx0UyrGyQbcDGE8pU+1URH5ciS25GgeTT6h7Mi6CzDXyz3Tdxt6netVg\nSZ9RZaC3AgMBAAECggEARuTE7FeX/X8mLPTSgDl+XQUiVayXa9OWhO3U33vA9jH4\nSGPKeWnvhE3pjgPlk9x+lFvU+5rT1+HH1Um9ds6yBAtq1IhaKDE0LmEOz2BcU3qQ\nCc6rWnMu1msR33tWASWK4rNvhHtfggs+j943PHD+uFywH3DnQrPQXEp4hSH0bRsg\n/2pUjK1b/H4WLBxrQu7XhlrgniA3zuh5jUSePPPvzdElhqPeprf83XsfDON195r6\nUbkwLShqsPZ/J5NuTvyw5kgOgXjbYUQwimIU4yR9lMe8MeoXlL6VS8xoA+h3yKNC\nkzWDUGORlBfdaYVW+yKI+AcUMM7GD+RRk2Y88tjtYQKBgQDiO4WE7uXS2U2fhsMy\nyMQJUwL15um2Zl0Z2yVZi9KNs8ySW1p8zGwjbtQZ0EkKDz3cyTjFOA+A2NhjEDue\nI1giKYcmJisUcgem+C/GPJykcWbUQ11S6vlZf7l2MptgByzJiCHq86FMJPJIRj9J\nv0LbTOfnB3MqjigRfasZ3PmypwKBgQDeojX61LaBOnIcBai9o8wdO8UJV9xLQa2t\nX5pWCOHheBuyoFV7mAhrqjXJ7WiOCdhrH6iuBKigL47fQzlCXkKpZ15bGwdMc6aE\n/ytHLddn0R0LikcIWS8gxPLE4jSPgCl7iwXJoQxva7Q5lqsaGCF3wn2Vy6Cx03Zq\nK/fw/gWzcQKBgHhm0y2nczsfGZfAQhzCCssnmdjDVzkTC5OaNSuOJbXyrfpqkiL/\nLMJC1rEST/0BlZvun78ekemx/p/iYMhN6TbtQRdFkwHjmjz7s3legsNl8yMe4wkh\nMym1tz+3uUeHKgfr4plHpl1/AE8Ey+P03aEXMgibx2grlhmQ90HhgCbbAoGASDi+\n4hvXCJz5H3YGg157fJBDHwDNiexIdxGoc3h2LjpUYeH5WRq8wJB62oKVhF5VQosG\noU0Jls1Wv76C+LCzV1kdFtjxyS9LOaG9XF3WnusLTQ8Sc/bafvrk9lGbU2H0EwvK\nWNpRumNqF7R01QY29S62pr1j58v9gfu5dwgwuUECgYEAmbnkrNZ/ChwdWIzBNAEy\n2/0EB2Cr5INvQOwV4CNYB4Ib42+9hqUwEMi1mVg1xzR5Z7T48IvOBVVoQ126BufV\nqk+vCW/Qy2RidFKSVonrS3JuAcL5E3292r/lWbolmmqTfbYkT9tJKxSbDvgM3KWK\nsFaDHMRZNP9ATwcHArI7ApY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mutabazi@plasma-light-384513.iam.gserviceaccount.com",
+  "client_id": "113447600367727692322",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mutabazi%40plasma-light-384513.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
